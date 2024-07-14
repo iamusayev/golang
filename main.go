@@ -26,6 +26,8 @@ func main() {
 	var age uint
 	var number uint
 	var id uint64
+
+	welcome()
 	for {
 		fmt.Println("1.Save \n2.Get user by id \n3.Edit existing user\n4.Get all users")
 		fmt.Scan(&number)
@@ -86,7 +88,6 @@ func getUserById(id uint64) {
 		fmt.Println("#####################################################\n")
 		fmt.Printf("Selected user is %v", selectedUser)
 		fmt.Println("#####################################################\n")
-
 	}
 }
 
@@ -125,7 +126,6 @@ func welcome() {
 	fmt.Println("Welcome to our application, please register account")
 
 	fmt.Println("#####################################################")
-
 }
 
 func validateUserInput(firstName string, lastName string, email string, age uint, users map[uint64]User) (bool, bool, bool) {
