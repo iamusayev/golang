@@ -86,7 +86,6 @@ func getUserById(id uint64) {
 		fmt.Println("#####################################################\n")
 		fmt.Printf("Selected user is %v", selectedUser)
 		fmt.Println("#####################################################\n")
-		return
 	}
 }
 
